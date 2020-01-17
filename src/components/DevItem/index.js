@@ -7,7 +7,6 @@ function DevItem({ dev }){
 
         <li  className= "dev-item">
         <header>
-          
           <img src={dev.avatar_url} alt={dev.name}/>
           <div className="user-info">
             <strong>{dev.name}</strong>

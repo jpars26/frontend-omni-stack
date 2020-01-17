@@ -2,7 +2,6 @@ import React ,{ useState, useEffect} from 'react';
 
 function DevFrom( { onSubmit }){
     
-
     const[github_username, setGithubUsername] = useState('');
     const[techs, setTechs] = useState('');
     const[latitude, setLatitude] = useState('');
@@ -11,6 +10,7 @@ function DevFrom( { onSubmit }){
 useEffect(() => {
     navigator.geolocation.getCurrentPosition(
         (position) => {
+          
           const { latitude, longitude} = position.coords;
           
           setLatitude(latitude)
